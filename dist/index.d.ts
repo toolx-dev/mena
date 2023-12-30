@@ -14,7 +14,7 @@ declare class Mena {
     private options;
     private calime;
     constructor(options?: MenaOptions);
-    private clearLines;
+    private clearLine;
     update(value: string | number, text?: string): void;
     private printProgressBar;
     private printText;

@@ -41,17 +41,17 @@ class Mena {
         this.calime = new Calime('');
     }
 
-    private clearLines(numLines: number): void {
-        for (let i = 0; i <= numLines; i++) {
-            process.stdout.clearLine(0);
-            process.stdout.cursorTo(0);
-            process.stdout.moveCursor(0, -1);
-        }
+    private clearLine(): void {
+        process.stdout.clearLine(0);
+        process.stdout.cursorTo(0);
+        process.stdout.moveCursor(0, -1);
     }
 
     update(value: string | number, text?: string): void {
-        this.clearLines(this.numLinesPrinted);
+        this.clearLine();
+
         if (typeof value === 'string') {
+            process.stdout.clearLine(1);
             console.log(this.printText(value));
         } else {
             this.task.isComplete = value >= 1;
