@@ -6,7 +6,7 @@
     "vitest": "^1.1.0"
   },
   "name": "mena",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A customizable progress bar for console applications.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
