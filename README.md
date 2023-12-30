@@ -21,7 +21,7 @@
 `Mena` is designed for ease of use and customization, focusing on console progress display. For additional features or complex console UIs, consider specialized libraries.
 :::
 
- <img width="300" src="https://raw.githubusercontent.com/toolx-dev/mena/main/example.gif" alt="mena example" />
+ <img width="600" src="https://raw.githubusercontent.com/toolx-dev/mena/main/example.gif" alt="mena example" />
 
 ## Features
 - **Customizable Progress Bar**: Tailor the length, characters, and colors of the progress bar.
