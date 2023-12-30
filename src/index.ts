@@ -104,13 +104,14 @@ class Mena {
         return `${bar} ${progressBarInfo}`;
     }
 
-    private printText(text: string, color: Color = [255, 255, 255], backgroundColor?: Color): string {
-        const calime = new Calime(text);
+    private printText(text: string): string {
+        const calime = new Calime(` ${text} `);
 
-        let backgroundText = calime.color(color).apply('bold');
+        let backgroundText = calime.apply('bold');
 
-        if (backgroundColor) {
-            backgroundText.background(backgroundColor);
+        if (this.options?.completeCharColor) {
+            const bgColor = this.options.completeCharColor[this.options.completeCharColor.length - 1];
+            backgroundText.background(bgColor)
         }
 
         this.numLinesPrinted = 1;
