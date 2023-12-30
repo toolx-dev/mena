@@ -1,0 +1,44 @@
+{
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "name": "mena",
+  "version": "1.0.1",
+  "description": "A customizable progress bar for console applications.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "release": "standard-version",
+    "release:first": "standard-version --skip.bump",
+    "release:soft": "standard-version --skip.bump --skip.commit --skip.tag"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolx-dev/mena.git"
+  },
+  "keywords": [
+    "CLI",
+    "progressbar",
+    "style",
+    "console",
+    "progress",
+    "bar"
+  ],
+  "author": "William Manco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolx-dev/mena/issues"
+  },
+  "homepage": "https://github.com/toolx-dev/mena#readme",
+  "dependencies": {
+    "calime": "^1.0.1"
+  }
+}

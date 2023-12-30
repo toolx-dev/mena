@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "target": "es2018",
+        "strict": true,
+        "declaration": true,
+        "module": "ESNext",
+        "outDir": "./dist"
+      },
+      "include": ["src/**/*"]
+}
